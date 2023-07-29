@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family: nav;
+    src: url('./Raleway/static/Raleway-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: about;
+    src: url('./Raleway/static/Raleway-Thin.ttf');
+}
+
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    background-color: rebeccapurple;
+    width: 100vw;
+    height: 7vh;
+    align-items: center;
+    font-family: nav;
+}
+
+.nav-btn{
+    color: whitesmoke !important;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 480px){
+
+    .imagen{
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    .imagen{
+        width: 90vw;
+        height: 90vw;
+        border-radius: 50%;
+    }
+}
+
+p{
+    font-family: about;
+}
