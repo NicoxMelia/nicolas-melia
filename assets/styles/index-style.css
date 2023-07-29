@@ -1,12 +1,12 @@
 
 @font-face {
     font-family: nav;
-    src: url('./Raleway/static/Raleway-BoldItalic.ttf');
+    src: url('./Raleway/static/Raleway-Medium.ttf');
 }
 
 @font-face {
     font-family: about;
-    src: url('./Raleway/static/Raleway-Thin.ttf');
+    src: url('./Raleway/static/Raleway-Light.ttf');
 }
 
 .nav{
@@ -25,14 +25,32 @@
     font-size: 1.2rem;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) and (max-width: 770px){
 
+    .imagen{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (min-width: 770px) and (max-width: 1200px){
+
+    .imagen{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
     .imagen{
         width: 15vw;
         height: 15vw;
         border-radius: 50%;
     }
-
 }
 
 @media screen and (max-width: 480px) {
