@@ -33,6 +33,11 @@
         border-radius: 50%;
     }
 
+    .logo-len{
+        width: 32vw;
+        height: 32vw;
+    }
+
 }
 
 @media screen and (min-width: 770px) and (max-width: 1200px){
@@ -41,6 +46,11 @@
         width: 30vw;
         height: 30vw;
         border-radius: 50%;
+    }
+
+    .logo-len{
+        width: 16vw;
+        height: 16vw;
     }
 }
 
@@ -51,6 +61,11 @@
         height: 15vw;
         border-radius: 50%;
     }
+
+    .logo-len{
+        width: 8vw;
+        height: 8vw;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -60,8 +75,43 @@
         height: 90vw;
         border-radius: 50%;
     }
+
+    .logo-len{
+        width: 80vw;
+        height: 80vw;
+    }
 }
 
-p{
+p, h1{
     font-family: about;
+}
+
+@keyframes subir{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.titulo-lenguajes{
+    animation: subir 2s;
+    animation-fill-mode: forwards;
+}
+
+.lenguajes{
+    opacity: 0;
+    animation: aparecer 2s 1s;
+    animation-fill-mode: forwards;
 }
