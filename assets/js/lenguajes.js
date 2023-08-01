@@ -11,7 +11,7 @@ $(document).ready(function(){
 });
 
 function imprimir(logo){
-    $(".lenguajes").append("<div class='col-md-4 d-flex justify-content-center'><img src='"+logo+"' class='logo-len'>")
+    $(".lenguajes").append("<div class='col-md-4 d-flex justify-content-center pb-5'><img src='"+logo+"' class='logo-len'>")
     $(".lenguajes").append("</div>");
 }
 
