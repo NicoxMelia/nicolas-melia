@@ -11,8 +11,16 @@
     50% { border-color: white; }
 }
 
-.home-view {
+.container-fluid{
     background-image: url("../assets/img/homeBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0%;
+    position: relative;
+}
+
+.home-view {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -46,4 +54,6 @@
 
 #abilities{
     height: 100vh;
+    backdrop-filter: blur(10px);
+    z-index: 1;
 }
