@@ -4,12 +4,39 @@
 
 body{
     color: #d8d7d5;
+    
 }
 
 #mainView{
     height: 100vh;
     background-color: #020204
    /* background-color: aliceblue;*/
+}
+
+@media (max-width: 768px) {
+    #about-01 {
+        background-position: top !important;
+        padding-bottom: 25vw !important;
+    }
+
+    #about-01 h4 {
+        width: 80vw !important;
+        
+    }
+}
+
+#about-01{
+    height: 100vh;
+    background-image: url("../assets/img/back01.png");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 20vh;
+    padding-right: 10vw;
+}
+
+#about-01 h4{
+    font-weight: 300;
+    width: 30vw;
 }
 
 #mainView img{
