@@ -30,10 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
             var cardTop = document.createElement('div');
             cardTop.classList.add('card-top');
             
-            var cardTopMask = document.createElement('div');
-            cardTopMask.classList.add('card-top-mask');
+            var cardTopImg = document.createElement('div');
+            cardTopImg.classList.add('card-top-img');
+            cardTopImg.classList.add('d-flex');
+            cardTopImg.classList.add('justify-content-center');
+            cardTopImg.classList.add('align-items-center');
+            
+            
+            var img = document.createElement('img');
+            img.setAttribute('id', 'icon-lang');
+            img.setAttribute('src', front[i].iconPath);
+
+            cardTopImg.appendChild(img);
     
-            cardTop.appendChild(cardTopMask);
+            cardTop.appendChild(cardTopImg);
             card.appendChild(cardTop);
     
             var cardBottom = document.createElement('div');
