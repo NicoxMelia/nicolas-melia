@@ -35,44 +35,44 @@ var front = [
     },
     {
         name: "CSS",
-        iconPath: "../assets/icons/icon-css.png"
+        iconPath: "./assets/icons/icon-css.png"
     },
     {
         name: "JavaScript",
-        iconPath: "../assets/icons/icon-js.png"
+        iconPath: "./assets/icons/icon-js.png"
     },
     {
         name: "Bootstrap",
-        iconPath: "../assets/icons/icon-bootstrap.png"
+        iconPath: "./assets/icons/icon-bootstrap.png"
     }
 ]
 
 var back = [
     {
         name: "Python",
-        iconPath: "../assets/icons/icon-py.png"
+        iconPath: "./assets/icons/icon-py.png"
     },
     {
         name: "Java",
-        iconPath: "../assets/icons/icon-java.png"
+        iconPath: "./assets/icons/icon-java.png"
     },
     {
         name: "C++",
-        iconPath: "../assets/icons/icon-cpp.png"
+        iconPath: "./assets/icons/icon-cpp.png"
     }
 ]
 
 var tools = [
     {
         name: "Git",
-        iconPath: "../assets/icons/icon-git.png"
+        iconPath: "./assets/icons/icon-git.png"
     }
 ]
 
 var hardware = [
     {
         name: "Arduino",
-        iconPath: "../assets/icons/icon-arduino.png"
+        iconPath: "./assets/icons/icon-arduino.png"
     }
 ]
 
