@@ -134,8 +134,6 @@ body{
 
 .carousel-item {
     display: block;
-    justify-content: center;
-    align-items: center;
     height: auto; /* Ajusta según tus necesidades */
 }
 
@@ -211,4 +209,9 @@ body{
     min-width: 130px;
     height: auto;
     position: inherit;
+}
+
+.carousel{
+    width: 290px;
+    align-self: center;
 }
