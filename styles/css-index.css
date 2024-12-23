@@ -133,7 +133,7 @@ body{
 }
 
 .carousel-item {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     height: auto; /* Ajusta según tus necesidades */
