@@ -31,7 +31,7 @@
 var front = [
     {
         name: "HTML",
-        iconPath: "../assets/icons/icon-html.png"
+        iconPath: "./assets/icons/icon-html.png"
     },
     {
         name: "CSS",
