@@ -1,6 +1,7 @@
 /*import {front, back, tools} from './json-skills.js';*/
 import {buildCarousel} from './js-carousel.js';
 import {buildCarts} from './js-table-cards.js';
+import {lang} from './json-skills.js';
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -81,7 +82,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if(isSmallScreen){
             // build a carousel
-            buildCarousel();
+           for(var i in lang){
+               var carouselTitle = document.createElement('h3');
+               carouselTitle.innerHTML = lang[i].category;
+               aboutSkills.appendChild(carouselTitle);
+               buildCarousel(lang[i].items);
+           }
+
         }else{
             // build carts
             buildCarts();

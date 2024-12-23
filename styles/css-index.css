@@ -132,6 +132,14 @@ body{
     text-align: center;
 }
 
+#about-skills h3{
+    font-family: "raleway";
+    font-weight: 500;
+    color: #141414;
+    padding-bottom: 1vh;
+    text-align: center;
+}
+
 .carousel-item {
     display: block;
     height: auto; /* Ajusta según tus necesidades */
@@ -214,4 +222,5 @@ body{
 .carousel{
     width: 290px;
     align-self: center;
+    padding-bottom: 8vh;
 }
