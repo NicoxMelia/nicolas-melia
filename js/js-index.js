@@ -1,8 +1,10 @@
-import {front, back, tools} from './json-skills.js';
+/*import {front, back, tools} from './json-skills.js';*/
+import {buildCarousel} from './js-carousel.js';
+import {buildCarts} from './js-table-cards.js';
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    function buildCarousel(){
+    /*function buildCarousel(){
         var carousel = document.createElement('div');
         carousel.classList.add('carousel');
         carousel.classList.add('slide');
@@ -65,16 +67,24 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselContainer.innerHTML = '';
         carouselContainer.appendChild(carousel);
     
-    }
+    }*/
 
     function verifyScreenSize(){
         var isSmallScreen = window.matchMedia("(max-width: 576px)").matches;
+
+        var aboutSkills = document.getElementById('about-skills');
+        var titleAbout = document.createElement('h1');
+        titleAbout.innerHTML = 'My skills';
+
+        aboutSkills.innerHTML = '';
+        aboutSkills.appendChild(titleAbout);
 
         if(isSmallScreen){
             // build a carousel
             buildCarousel();
         }else{
             // build carts
+            buildCarts();
         }
     }
 

@@ -1,0 +1,72 @@
+import { buildCard } from './js-card-maker.js';
+import {front, back, tools} from './json-skills.js';
+
+function buildCarousel(){
+    var carousel = document.createElement('div');
+    carousel.classList.add('carousel');
+    carousel.classList.add('slide');
+    carousel.classList.add('carousel-fade');
+    carousel.setAttribute('data-bs-ride', 'carousel');
+    carousel.setAttribute('id', 'carouselSkills');
+
+    var carouselItemsContainer = document.createElement('div');
+    carouselItemsContainer.classList.add('carousel-inner');
+
+    var flag = true;
+
+    for(var i in front){
+        var item = document.createElement('div');
+        item.classList.add('carousel-item');
+
+        if(flag){
+            item.classList.add('active');
+            flag = false;
+        }
+        
+        /*var card = document.createElement('div');
+        card.classList.add('language-card');
+        
+        var cardTop = document.createElement('div');
+        cardTop.classList.add('card-top');
+        
+        var cardTopImg = document.createElement('div');
+        cardTopImg.classList.add('card-top-img');
+        cardTopImg.classList.add('d-flex');
+        cardTopImg.classList.add('justify-content-center');
+        cardTopImg.classList.add('align-items-center');
+        
+        
+        var img = document.createElement('img');
+        img.setAttribute('id', 'icon-lang');
+        img.setAttribute('src', front[i].iconPath);
+
+        cardTopImg.appendChild(img);
+
+        cardTop.appendChild(cardTopImg);
+        card.appendChild(cardTop);
+
+        var cardBottom = document.createElement('div');
+        cardBottom.classList.add('card-bottom');
+
+        var cardBottomMask = document.createElement('div');
+        cardBottomMask.classList.add('card-bottom-mask');
+
+        cardBottom.appendChild(cardBottomMask);
+        card.appendChild(cardBottom);*/
+        item.appendChild(buildCard(front[i]));
+        carouselItemsContainer.appendChild(item);
+        carousel.appendChild(carouselItemsContainer);
+
+
+    }
+
+    var carouselContainer = document.getElementById('about-skills');
+    carouselContainer.classList.add('d-flex');
+    carouselContainer.classList.add('flex-column');
+    carouselContainer.classList.add('justify-content-center');
+    /*carouselContainer.innerHTML = '';*/
+    carouselContainer.appendChild(carousel);
+
+}
+
+export {buildCarousel};
