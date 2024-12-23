@@ -4,7 +4,7 @@
 @import url("https://use.typekit.net/meo5ycu.css");
 body{
     color: #d8d7d5;
-    
+    user-select: none;
 }
 
 #mainView{
