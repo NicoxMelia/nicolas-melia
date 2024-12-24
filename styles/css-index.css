@@ -35,11 +35,26 @@ body{
     #about-02 h4{
         width: 75vw !important;
     }
+
+    #mainView img{
+        margin-right: 0 !important;
+        margin-bottom: 3px;
+    }
 }
 
 @media (max-width: 676px){
     #about-skills .col{
         justify-content: center;
+    }
+}
+
+@media (max-width: 600px){
+    .item-text{
+        font-size: 100% !important;  /*1.2em*/
+    }
+
+    #proyect-title{
+        font-size: 2.4em !important;
     }
 }
 
@@ -249,13 +264,15 @@ body{
 
 .proyects-bg h1{
     font-family: "raleway";
-    font-weight: 700;
+    font-weight: 600;
     color: #f6f6f6;
     padding-top: 10vh;
     padding-bottom: 5vh;
     text-align: center;
     position: relative;
-    padding-bottom: 10vh;
+    /*padding-bottom: 10vh;*/
+    font-size: 2.9em;
+    padding-top: 0 !important;
 }
 
 .proyect-item{
@@ -264,6 +281,7 @@ body{
     position: relative;
     text-decoration: none;
     margin-bottom: 15px;
+    padding-right: 30px;
     /*background-color: #ebebeb;
     position: inherit;
     border-radius: 25px;
@@ -287,6 +305,7 @@ body{
 
 .item-icon{
     max-width: 5vw;
+    min-width: 30px;
     width: auto;
     height: auto;
     margin-left: 8vw;
@@ -304,6 +323,7 @@ body{
     font-weight: 250;
     color: #f6f6f6;
     margin: 0;
+    font-size: 1.5em;
 }
 
 .new-item{
@@ -332,3 +352,4 @@ body{
     border-radius: 25px;
     opacity: 0.14;
 }
+
