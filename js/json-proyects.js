@@ -6,8 +6,13 @@ var proyects = [
     },
     {
         name: "CodAr website",
-        url: "https://linktr.ee/Code.Ar",
+        url: "https://codigoargentino.cc",
         imgPath: "./assets/icons/icon-codar.png"
+    },
+    {
+        name: "Math & Code | CodeTrainer 🧠",
+        url: "https://nicoxmelia.github.io/UnitTester/index.html",
+        imgPath: "./assets/icons/icon-mathcode.png"
     },
     {
         name: "Operative Systems I assignment",

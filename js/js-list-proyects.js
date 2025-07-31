@@ -48,6 +48,7 @@ function buildItems(itemJson){
     item.classList.add('d-flex');
     item.classList.add('align-items-center');
     item.setAttribute('href', itemJson.url);
+    item.setAttribute('target', '_blank');
 
     var itemIcon = document.createElement('div');
     itemIcon.classList.add('item-icon');
