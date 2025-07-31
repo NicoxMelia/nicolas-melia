@@ -134,7 +134,7 @@ body{
 }
 
 #about-skills .row{
-    padding-left: 9vw;
+    padding-left: 3vw; /* Adjust from 9vw to 3vw */
 }
 
 #about-skills h1{
